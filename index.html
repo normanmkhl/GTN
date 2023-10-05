@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">~
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTN Komputopedia</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lux Theme from Bootswatch -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" rel="stylesheet">
+    <!-- Materia Theme from Bootswatch -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 </head>
-<body>
-    <header>
-        <h1>GTN Komputopedia</h1>
-    </header>
 
-    <main>
-        <div id="chartdiv"></div>
-    </main>
+<body class="bg-light">
 
-    <footer>
-        <p>© 2023 GTN Komputopedia. All Rights Reserved.</p>
-    </footer>
+    <div class="container mt-4">
+        <header>
+            <!-- If you need a centered container inside the header, add it here -->
+            <div class="container">
+                <h1 class="text-center vibrant-text">GTN Komputopedia</h1>
+            </div>
+        </header>
+
+
+        <main class="mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                    <div class="card">
+                        <div class="card-header">amCharts Visualization</div>
+                        <div class="card-body">
+                            <div id="chartdiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Similarly, if you need a centered container inside the footer, add it here -->
+            <div class="container">
+                <p class="text-center vibrant-footer">© 2023 GTN Komputopedia. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
+
 </html>
