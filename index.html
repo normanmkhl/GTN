@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">~
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTN Komputopedia</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Lux Theme from Bootswatch -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" rel="stylesheet">
     <!-- Materia Theme from Bootswatch -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/locales/de_DE.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script>
 </head>
 
 <body class="bg-light">
 
-    <div class="container mt-4">
-        <header>
-            <!-- If you need a centered container inside the header, add it here -->
-            <div class="container">
-                <h1 class="text-center vibrant-text">GTN Komputopedia</h1>
-            </div>
-        </header>
+    <header>
+        <h1 class="text-center vibrant-text">GTN Komputopedia</h1>
+    </header>
 
 
-        <main class="mt-4">
-            <div class="row justify-content-center">
-                <div class="col-md-8 mb-4">
-                    <div class="card">
-                        <div class="card-header">amCharts Visualization</div>
-                        <div class="card-body">
-                            <div id="chartdiv"></div>
-                        </div>
+    <main class="mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-4">
+                <div class="card">
+                    <div class="card-header">amCharts Visualization</div>
+                    <div class="card-body">
+                        <div id="chartdiv"></div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <!-- Similarly, if you need a centered container inside the footer, add it here -->
-            <div class="container">
-                <p class="text-center vibrant-footer">© 2023 GTN Komputopedia. All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <p class="text-center vibrant-footer">© 2023 GTN Komputopedia. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

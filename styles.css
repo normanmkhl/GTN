@@ -1,42 +1,43 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* To ensure padding doesn't affect total width/height */
+    box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Ensures there's no margin around the body */
-    background-color: #f4f4f4;
-    background-image: linear-gradient(45deg, #6b8dd6, #8e37d7);
+    background-color: #f5f5f5;
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Use min-height instead of height */
+    min-height: 100vh;
 }
 
-header {
-    flex-shrink: 0; /* Prevent shrinking */
-    width: 100%; /* Ensures it fills out horizontally */
+header, footer {
+    flex-shrink: 0;
+    width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: repeating-linear-gradient(
+      45deg,
+      #404040,
+      #404040 2px,
+      #555 2px,
+      #555 4px
+    );
+}
+
+header h1, footer p {
+    background: -webkit-linear-gradient(left, #eee, #666, #eee);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 main {
-    flex: 1; /* Ensures that main content occupies all available space */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    flex-shrink: 0; /* Prevent shrinking */
-    width: 100%; /* Ensures it fills out horizontally */
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 canvas {
@@ -50,9 +51,9 @@ canvas {
 }
 
 .vibrant-text {
-    color: #FFC107; /* Vibrant gold color */
+    color: #FFC107;
 }
 
 .vibrant-footer {
-    color: #17A2B8; /* Vibrant teal color */
+    color: #FFC107;
 }
